@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+:root{
+    --primary-color:#1588ef;
+}
+
+body{
+    font-family: 'Otomanopee One', sans-serif;
+    margin: 0;
+}
+
+/**navigation bar**/
+.navbar{
+    background-color:var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-radius:1rem;
+}
