@@ -2,6 +2,8 @@
 
 :root{
     --primary-color:#1588ef;
+    --dark-gray:#696969;
+    --ow:#dddee0;
 }
 
 body{
@@ -14,6 +16,12 @@ body{
     text-decoration: none;
     padding: 1rem ;
 }
+.container-center{
+    max-width: 400px;
+    margin: auto;
+}
+
+
 /**navigation bar**/
 .navbar{
     background-color:var(--primary-color);
@@ -31,10 +39,15 @@ body{
 .navbar .link{
     color: white;
     padding: 0rem, 0.5rem;
+    
 }
 
 .non-bullet{
     list-style: none;
+    margin:none;
+    
+}
+.right{
     text-align: right;
 }
 
@@ -46,4 +59,55 @@ body{
 .link-active {
     font-weight:bold;
     font-size: 1.2rem;
+}
+
+.programmer{
+    padding:2rem;
+}
+
+.programmer .programmer-img{
+    max-width: 500px;
+    display: block;
+    margin:auto;
+}
+
+.programmer .programmer-heading{
+    color:var(--dark-gray);
+    text-align: center;
+    padding-top:0.5rem;
+}
+
+.programmer .programmer-inv{
+    color: var(--primary-color);
+}
+
+.section{
+    padding:1.2rem;
+}
+
+
+.section-div{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center; 
+}
+
+.ow{
+    background-color:var(--ow);
+}
+
+.footer{
+    background-color:var(--primary-color);
+    color:white;
+    border-top-right-radius:1rem;
+    border-top-left-radius: 1rem;
+    padding-bottom: 2rem;
+}
+
+.footer-div{
+    text-align:center;
+}
+
+.footer .link{
+    color:white;
 }
