@@ -9,6 +9,11 @@ body{
     margin: 0;
 }
 
+
+.link{ 
+    text-decoration: none;
+    padding: 1rem ;
+}
 /**navigation bar**/
 .navbar{
     background-color:var(--primary-color);
@@ -25,6 +30,7 @@ body{
 
 .navbar .link{
     color: white;
+    padding: 0rem, 0.5rem;
 }
 
 .non-bullet{
@@ -35,4 +41,9 @@ body{
 .list-item-inline{
     display: inline;
     padding: 0.5rem , 0.5rem;
+}
+
+.link-active {
+    font-weight:bold;
+    font-size: 1.2rem;
 }
