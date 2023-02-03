@@ -393,16 +393,20 @@ form textarea{
 .contact-button{
     width: 160px;
     cursor: pointer;
+    padding:20px;
+    border-radius: 10px;
     background: var(--main-color);
     color: #FFF;
     justify-content: center;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-left: 35%;
+    border:0;
 }
 
 .contact-button:hover{
     background: var(--hover);
+    border: 0;
 }
 
 .footer{
