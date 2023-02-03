@@ -37,6 +37,7 @@ body.active{
 
 section{
     padding:50px 10%;
+    scroll-margin-top: 3vh;
 }
 
 *::selection{
@@ -117,6 +118,7 @@ header{
 
 .home-img img{
     width:100%;
+    
 }
 
 .home-text span{
