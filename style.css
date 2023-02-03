@@ -343,9 +343,11 @@ header{
 
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minimax(280px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(280px,auto));
     gap: 1rem;
-    margin: top 2rem;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .portfolio-img{
@@ -354,7 +356,7 @@ header{
 }
 
 .portfolio-img img{
-    width: 100%;
+    width: 300px;
     display: block;
 }
 
