@@ -19,7 +19,7 @@ document.onclick = (e) => {
 const darkmode = document.querySelector('#darkmode');
 
 // Persist dark mode preference
-if (localStorage.getItem('theme') === 'dark') {
+if (localStorage.getItem('theme') !== 'light') {
     document.body.classList.add('active');
     darkmode.classList.replace('bx-moon', 'bx-sun');
 }
@@ -28,11 +28,11 @@ darkmode.onclick = () => {
     if (darkmode.classList.contains('bx-moon')) {
         darkmode.classList.replace('bx-moon', 'bx-sun');
         document.body.classList.add('active');
-        localStorage.setItem('theme', 'dark');
+        localStorage.setItem('theme', 'light');
     } else {
         darkmode.classList.replace('bx-sun', 'bx-moon');
         document.body.classList.remove('active');
-        localStorage.setItem('theme', 'light');
+        localStorage.setItem('theme', 'dark');
     }
 };
 
