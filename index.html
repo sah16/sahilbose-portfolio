@@ -4,245 +4,355 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sahil Bose</title>
+    <title>Sahil Bose — Product Manager</title>
 
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-
-
-
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <!--=====================Nav Bar===================-->
-    <header>
 
-        <a href="" class="logo">Sahil Bose</a>
+    <!-- ===================== Nav Bar =================== -->
+    <header>
+        <a href="#home" class="logo">Sahil<span>.</span></a>
 
         <div class="bx bx-menu" id="menu-icon"></div>
 
-        <ul class="navbar" id ="navbar">
+        <ul class="navbar" id="navbar">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">What I Do</a></li>
+            <li><a href="#portfolio">Work</a></li>
             <li><a href="#contact">Contact</a></li>
-
             <div class="bx bx-moon" id="darkmode"></div>
         </ul>
     </header>
 
-
-
-    <!--=====================Home Section===================-->
-
+    <!-- ===================== Home Section =================== -->
     <section class="home" id="home">
-        <div class="social">
-            <a href="https://github.com/sah16"><i class="bx bxl-github"></i></a>
-            <a href="https://in.linkedin.com/in/sahilbose"><i class="bx bxl-linkedin"></i></a>
-            <a href="https://www.instagram.com/sahil__bose/?hl=en"><i class="bx bxl-instagram-alt"></i></a>
-        </div>
+        <div class="home-bg-shape"></div>
 
-        <div class="home_img">
-            <img src="./pics/Software integration-amico.svg" alt="">
+        <div class="social">
+            <a href="https://github.com/sah16" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+            <a href="https://in.linkedin.com/in/sahilbose" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://www.instagram.com/sahil__bose/?hl=en" target="_blank" aria-label="Instagram"><i class="bx bxl-instagram-alt"></i></a>
         </div>
 
         <div class="home-text">
-            <span>Hello , I'm</span>
-            <h1>Sahil Bose</h1>
-            <h2>Software Developer</h2>
-            <p>I am a young and inspiring software devloper with knowledge in various fields in the software domain. 
-                 </p>
-                 <a href="#contact" class="btn">Contact Me</a>
+            <div class="badge">Product Manager & Strategist</div>
+            <h1>Sahil <em>Bose</em></h1>
+            <h2>Turning user problems into products people love</h2>
+            <p>I build at the intersection of data, design, and business strategy — from 0→1 SaaS products to market-entry GTM playbooks. CAT '23 · 98.08 percentile.</p>
+            <div class="home-cta">
+                <a href="#portfolio" class="btn btn-primary">See My Work</a>
+                <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+            </div>
+        </div>
+
+        <div class="home-visual">
+            <div class="orbit-ring ring-1"></div>
+            <div class="orbit-ring ring-2"></div>
+            <div class="orbit-ring ring-3"></div>
+            <div class="center-card">
+                <i class="bx bx-trending-up"></i>
+                <span>Product Strategy</span>
+            </div>
+            <div class="orbit-item item-1"><i class="bx bx-data"></i><span>Analytics</span></div>
+            <div class="orbit-item item-2"><i class="bx bx-user-voice"></i><span>User Research</span></div>
+            <div class="orbit-item item-3"><i class="bx bx-dollar-circle"></i><span>Monetization</span></div>
+            <div class="orbit-item item-4"><i class="bx bx-task"></i><span>Roadmapping</span></div>
         </div>
     </section>
 
-    <!--=====================About Section===================-->
-
+    <!-- ===================== About Section =================== -->
     <section class="about" id="about">
         <div class="heading">
+            <span class="section-tag">Introduction</span>
             <h2>About Me</h2>
-            <span>Introduction</span>
         </div>
 
         <div class="about-container">
-            <div class="about-img">
-                <img src="./pics/Programming-amico.svg" alt="">
+            <div class="about-text">
+                <p>I'm a product thinker with a foundation in engineering and a passion for building things that scale. I founded <strong>RetentionMate AI</strong> — a B2B SaaS churn prediction platform — from scratch, handling everything from user research and roadmapping to pricing strategy and LLM integration.</p>
+                <p style="margin-top:1rem;">My work spans product strategy, GTM planning, and data-driven decision making. I've mapped out $40B+ market opportunities, modelled revenue projections for streaming platforms, and designed user funnels that convert. I thrive at the crossroads of business logic and customer empathy.</p>
+
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>98.08</h3>
+                        <span>CAT '23 Percentile</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>99.67</h3>
+                        <span>DILR Percentile</span>
+                    </div>
+                    <div class="stat-card">
+                        <h3>7.82</h3>
+                        <span>CGPA · VTU ECE</span>
+                    </div>
+                </div>
             </div>
 
-            <div class="about-text">
-                <p>I am a young and inspiring software devloper with knowledge of Web development, Backend development, Data Structures and Algorithms, Programming languages like javascript(Frameworks Reactjs), C++. I am currently based out of Bengaluru, India. I am looking forward to work with a team with inspiring minds and great individuals.</p>
-            </div>
-            
             <div class="information">
                 <div class="info-box">
                     <i class="bx bxs-user"></i>
                     <span>Sahil Bose</span>
                 </div>
                 <div class="info-box">
+                    <i class="bx bxs-map"></i>
+                    <span>Bengaluru, Karnataka</span>
+                </div>
+                <div class="info-box">
                     <i class="bx bxs-phone"></i>
                     <span>+91 9686 366 918</span>
                 </div>
-
                 <div class="info-box">
                     <i class="bx bxs-envelope"></i>
                     <span>sahilbose.reach@gmail.com</span>
                 </div>
-            </div>
-           
-            <div>
-                <a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:c3d3e38b-5713-32fc-9f33-afbbf28f3b4b" class="btn">Download CV</a>
+                <div class="info-box">
+                    <i class="bx bxl-linkedin-square"></i>
+                    <span><a href="https://in.linkedin.com/in/sahilbose" target="_blank">linkedin.com/in/sahilbose</a></span>
+                </div>
+                <a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:c3d3e38b-5713-32fc-9f33-afbbf28f3b4b" class="btn btn-primary" target="_blank">Download Resume</a>
             </div>
         </div>
     </section>
 
-    <!--=====================skills Section===================-->
-
-
+    <!-- ===================== Skills Section =================== -->
     <section class="skills" id="skills">
         <div class="heading">
-            <h2>Skills</h2>
-            <span>My Skills</span>
+            <span class="section-tag">Capabilities</span>
+            <h2>Skills & Tools</h2>
         </div>
 
-        <div class="skills-container">
-            <div class="bars">
-                <div class="bars-box">
-                    <h3>CSS</h3>
-                    <span>86%</span>
-                    <div class="light-bar"></div>
-                    <div class="percent-bar css-bar"></div>
-                </div>
+        <div class="skills-grid">
 
-                <div class="bars-box">
-                    <h3>Javascript</h3>
-                    <span>81%</span>
-                    <div class="light-bar"></div>
-                    <div class="percent-bar js-bar"></div>
-                </div>
-
-
-                <div class="bars-box">
-                    <h3>Reactjs</h3>
-                    <span>77%</span>
-                    <div class="light-bar"></div>
-                    <div class="percent-bar rjs-bar"></div>
-                </div>
-
-
-                <div class="bars-box">
-                    <h3>HTML</h3>
-                    <span>94%</span>
-                    <div class="light-bar"></div>
-                    <div class="percent-bar html-bar"></div>
+            <div class="skill-category">
+                <h4><i class="bx bx-bulb"></i> Product</h4>
+                <div class="skill-tags">
+                    <span>Product Strategy</span>
+                    <span>Roadmapping</span>
+                    <span>User Research</span>
+                    <span>KPI Tracking</span>
+                    <span>GTM Strategy</span>
+                    <span>A/B Testing</span>
+                    <span>PRD Writing</span>
+                    <span>Agile / Scrum</span>
                 </div>
             </div>
 
-            <div class="skills-img">
-                <img src="./pics/Soft skills-bro.svg" >
+            <div class="skill-category">
+                <h4><i class="bx bx-bar-chart-alt-2"></i> Analytics</h4>
+                <div class="skill-tags">
+                    <span>Data Analysis</span>
+                    <span>Churn Analysis</span>
+                    <span>Retention Metrics</span>
+                    <span>Market Research</span>
+                    <span>Funnel Analytics</span>
+                    <span>SQL</span>
+                    <span>Python</span>
+                    <span>Chart.js</span>
+                </div>
             </div>
-        </div>
 
+            <div class="skill-category">
+                <h4><i class="bx bx-dollar"></i> Business</h4>
+                <div class="skill-tags">
+                    <span>SaaS Monetization</span>
+                    <span>Pricing Strategy</span>
+                    <span>Revenue Modelling</span>
+                    <span>Competitive Analysis</span>
+                    <span>User Funnels</span>
+                    <span>Upsell Design</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4><i class="bx bx-wrench"></i> Tools</h4>
+                <div class="skill-tags">
+                    <span>Figma</span>
+                    <span>Jira</span>
+                    <span>Trello</span>
+                    <span>Notion</span>
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>Netlify</span>
+                    <span>REST APIs</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4><i class="bx bx-code-alt"></i> Technical</h4>
+                <div class="skill-tags">
+                    <span>JavaScript</span>
+                    <span>React.js</span>
+                    <span>HTML/CSS</span>
+                    <span>Python</span>
+                    <span>LLM Integration</span>
+                    <span>Tailwind CSS</span>
+                </div>
+            </div>
+
+            <div class="skill-category highlight-card">
+                <h4><i class="bx bx-trophy"></i> Highlights</h4>
+                <ul class="highlight-list">
+                    <li><i class="bx bx-check"></i> Founded & launched B2B SaaS (RetentionMate AI)</li>
+                    <li><i class="bx bx-check"></i> 98.08 percentile CAT '23</li>
+                    <li><i class="bx bx-check"></i> Admitted to multiple IIMs</li>
+                    <li><i class="bx bx-check"></i> District & State football champion</li>
+                </ul>
+            </div>
+
+        </div>
     </section>
 
-<!--=====================services Section===================-->
-
+    <!-- ===================== Services Section =================== -->
     <section class="services" id="services">
         <div class="heading">
-            <h2>Services</h2>
-            <span>My Services</span>
+            <span class="section-tag">Expertise</span>
+            <h2>What I Do</h2>
         </div>
 
         <div class="services-content">
             <div class="services-box">
-                <i class="bx bx-code-alt"></i>
-                <h3>Web Development</h3>
-                <a href="">Learn More</a>
+                <i class="bx bx-map-alt"></i>
+                <h3>Product Strategy & Roadmapping</h3>
+                <p>Define product vision, prioritise features using data, and build roadmaps that align teams around measurable business goals.</p>
             </div>
 
             <div class="services-box">
-                <i class="bx bx-server"></i>
-                <h3>Backend Development</h3>
-                <a href="">Learn More</a>
+                <i class="bx bx-rocket"></i>
+                <h3>GTM & Market Entry</h3>
+                <p>Research market opportunities, segment users, and craft go-to-market strategies that drive adoption and competitive differentiation.</p>
             </div>
-    
+
+            <div class="services-box">
+                <i class="bx bx-dollar-circle"></i>
+                <h3>Monetization & Pricing</h3>
+                <p>Design subscription tiers, pricing models, and upsell funnels grounded in willingness-to-pay research and revenue projections.</p>
+            </div>
+
+            <div class="services-box">
+                <i class="bx bx-user-check"></i>
+                <h3>User Research & Discovery</h3>
+                <p>Translate raw user pain points into actionable product specs. From interviews to insight synthesis — I bridge users and builders.</p>
+            </div>
+
+            <div class="services-box">
+                <i class="bx bx-line-chart"></i>
+                <h3>Data & Retention Analytics</h3>
+                <p>Analyse churn signals, build retention dashboards, and define KPIs that give product teams clear direction and accountability.</p>
+            </div>
+
+            <div class="services-box">
+                <i class="bx bx-code-curly"></i>
+                <h3>Technical Product Management</h3>
+                <p>Bridge engineering and business — write PRDs, define APIs, and work fluently in code to collaborate effectively with dev teams.</p>
+            </div>
         </div>
     </section>
 
-<!--=====================portfolio Section===================-->
-
-
+    <!-- ===================== Portfolio Section =================== -->
     <section class="portfolio" id="portfolio">
         <div class="heading">
-            <h2>Portfolio</h2>
-            <span>My Recent Work</span>
+            <span class="section-tag">Case Studies</span>
+            <h2>Recent Work</h2>
         </div>
 
         <div class="portfolio-content">
-            
-            <div class="portfolio-img">
-                <a href="https://clone-91aed.web.app/"><img src="./pics/gmail.png" alt=""></a>
-            </div>
-            <div class="portfolio-img">
-                <a href="https://linkedin-clone-bd8f1.web.app/"><img src="./pics/linkedin.png" alt=""></a>
+            <div class="portfolio-card">
+                <div class="portfolio-card-header">
+                    <div class="portfolio-tag">B2B SaaS · Founder</div>
+                    <i class="bx bx-link-external portfolio-link-icon"></i>
+                </div>
+                <h3>RetentionMate AI</h3>
+                <p>AI-driven churn prediction SaaS. Led end-to-end product lifecycle — from user research and MVP scoping to LLM (Gemini) integration, risk scoring, automated alerts, and multi-tier pricing.</p>
+                <div class="portfolio-tags">
+                    <span>Product Vision</span><span>Churn Analytics</span><span>LLM</span><span>SaaS Pricing</span>
+                </div>
+                <a href="#" class="portfolio-cta">View Case Study →</a>
             </div>
 
+            <div class="portfolio-card featured">
+                <div class="portfolio-card-header">
+                    <div class="portfolio-tag">Market Entry · Case Study</div>
+                    <i class="bx bx-link-external portfolio-link-icon"></i>
+                </div>
+                <h3>Amazon Now — Quick Commerce India</h3>
+                <p>Strategic recommendation for Amazon Now's entry into India's $40B+ quick commerce market. Translated complex market data into GTM strategy visualisations with 40%+ annual growth projections.</p>
+                <div class="portfolio-tags">
+                    <span>GTM Strategy</span><span>Market Research</span><span>Data Viz</span><span>Competitive Analysis</span>
+                </div>
+                <a href="#" class="portfolio-cta">View Case Study →</a>
+            </div>
+
+            <div class="portfolio-card">
+                <div class="portfolio-card-header">
+                    <div class="portfolio-tag">Monetization · Streaming</div>
+                    <i class="bx bx-link-external portfolio-link-icon"></i>
+                </div>
+                <h3>Jio Hotstar — Pay Per View Model</h3>
+                <p>Designed a pay-per-view monetization model from willingness-to-pay research (90%+). Projected ₹1,345 Cr incremental revenue and ~19% subscription growth with UI/UX conversion improvements.</p>
+                <div class="portfolio-tags">
+                    <span>Pricing Strategy</span><span>Revenue Model</span><span>UX Design</span><span>User Funnels</span>
+                </div>
+                <a href="#" class="portfolio-cta">View Case Study →</a>
+            </div>
         </div>
     </section>
 
-    <!--=====================Contact===================-->
-
+    <!-- ===================== Contact =================== -->
     <section class="contact" id="contact">
         <div class="heading">
-            <h2>Contact</h2>
-            <span>Contact Me</span>
+            <span class="section-tag">Let's Talk</span>
+            <h2>Get In Touch</h2>
         </div>
 
-        <div class="contact-form">
-            <form class="honeypot"
-  name="honeypot"
-  method="POST"
-  netlify-honeypot="bot-field"
-  data-netlify="true"
->
-  <p class="hidden">
-    <label>
-      Don’t fill this out if you’re human: <input name="bot-field" />
-    </label>
-  </p>
-  <p class="hidden">
-    <button type="submit">Send</button>
-  </p>
-</form>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Open to PM & Strategy Roles</h3>
+                <p>I'm actively looking for Product Management, Product Strategy, and Associate PM opportunities. If you're building something meaningful — let's connect.</p>
+                <div class="contact-links">
+                    <a href="mailto:sahilbose.reach@gmail.com"><i class="bx bxs-envelope"></i> sahilbose.reach@gmail.com</a>
+                    <a href="https://in.linkedin.com/in/sahilbose" target="_blank"><i class="bx bxl-linkedin"></i> linkedin.com/in/sahilbose</a>
+                    <a href="https://github.com/sah16" target="_blank"><i class="bx bxl-github"></i> github.com/sah16</a>
+                </div>
+            </div>
 
-            <form name="contact" method="post" netlify>
-                <input type="text" placeholder="Your Name" name="name" required >
-                <input type="email" placeholder="Your Email" name="email" required>
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Write Message" required></textarea>
-                <button type="submit" value="Send" class="contact-button">SEND</button>
-            </form>
+            <div class="contact-form">
+                <form name="contact" method="post" netlify>
+                    <input type="text" placeholder="Your Name" name="name" required>
+                    <input type="email" placeholder="Your Email" name="email" required>
+                    <input type="text" placeholder="Subject (e.g. PM Role at Acme)" name="subject">
+                    <textarea name="message" cols="30" rows="7" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary contact-button">Send Message</button>
+                </form>
+
+                <!-- Honeypot -->
+                <form class="honeypot" name="honeypot" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                    <p class="hidden"><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
+                    <p class="hidden"><button type="submit">Send</button></p>
+                </form>
+            </div>
         </div>
     </section>
 
-    <!--====================Footer===================-->
-
+    <!-- ==================== Footer =================== -->
     <div class="footer">
         <h2>Sahil Bose</h2>
+        <p class="footer-tagline">Product Manager · Strategist · Builder</p>
         <div class="footer-social">
-            <a href="https://github.com/sah16"><i class="bx bxl-github"></i></a>
-            <a href="https://in.linkedin.com/in/sahilbose"><i class="bx bxl-linkedin-square"></i></a>
-            <a href="https://www.instagram.com/sahil__bose/?hl=en"><i class="bx bxl-instagram"></i></a>
+            <a href="https://github.com/sah16" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+            <a href="https://in.linkedin.com/in/sahilbose" aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
+            <a href="https://www.instagram.com/sahil__bose/?hl=en" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
         </div>
     </div>
 
-
     <div class="copyright">
-        <p href="">Created By <a href="">Sahil Bose</a> | All Rights Reserved.</p>
+        <p>Designed & built by <a href="#home">Sahil Bose</a> · All Rights Reserved.</p>
     </div>
 
-   <script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
-
