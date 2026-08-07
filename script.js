@@ -2,28 +2,23 @@
 const header  = document.querySelector('header');
 const menu    = document.querySelector('#menu-icon');
 const navbar  = document.querySelector('.navbar');
-
 menu.onclick = () => {
     navbar.classList.toggle('active');
     menu.classList.toggle('bx-x');
 };
-
 document.onclick = (e) => {
     if (!menu.contains(e.target) && !navbar.contains(e.target)) {
         navbar.classList.remove('active');
         menu.classList.remove('bx-x');
     }
 };
-
 // ===================== DARK MODE =====================
 const darkmode = document.querySelector('#darkmode');
-
 // Persist dark mode preference
 if (localStorage.getItem('theme') !== 'light') {
     document.body.classList.add('active');
     darkmode.classList.replace('bx-moon', 'bx-sun');
 }
-
 darkmode.onclick = () => {
     if (darkmode.classList.contains('bx-moon')) {
         darkmode.classList.replace('bx-moon', 'bx-sun');
@@ -35,19 +30,15 @@ darkmode.onclick = () => {
         localStorage.setItem('theme', 'dark');
     }
 };
-
 // ===================== ACTIVE NAV LINK ON SCROLL =====================
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.navbar a');
-
 const highlightNav = () => {
     const scrollY = window.scrollY + 100;
-
     sections.forEach(section => {
         const sectionTop    = section.offsetTop;
         const sectionHeight = section.offsetHeight;
         const sectionId     = section.getAttribute('id');
-
         if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
             navLinks.forEach(link => {
                 link.classList.remove('active-link');
@@ -58,9 +49,7 @@ const highlightNav = () => {
         }
     });
 };
-
 window.addEventListener('scroll', highlightNav);
-
 // ===================== HEADER SHADOW ON SCROLL =====================
 window.addEventListener('scroll', () => {
     if (window.scrollY > 20) {
@@ -69,12 +58,10 @@ window.addEventListener('scroll', () => {
         header.style.boxShadow = 'none';
     }
 });
-
 // ===================== SCROLL REVEAL ANIMATION =====================
 const revealElements = document.querySelectorAll(
-    '.skill-category, .services-box, .portfolio-card, .stat-card, .orbit-item'
+    '.skill-category, .services-box, .portfolio-card, .study-card, .stat-card, .orbit-item'
 );
-
 const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
@@ -86,7 +73,6 @@ const revealObserver = new IntersectionObserver((entries) => {
         }
     });
 }, { threshold: 0.1 });
-
 revealElements.forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
